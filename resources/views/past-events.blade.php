@@ -121,9 +121,15 @@
 	<div class="container">
 		<div class="row mt-30">
 		@foreach($progs as $past)
-	        @if($past->category == 'pastprogram')
-			<div class="col-lg-4 col-md-6 col-sm-8 col-10 m-auto">
-				<div class="blog-post">
+          @if($past->category == 'pastprogram')
+          <?php 
+            $date = $past->ddate;
+
+            $day = date("d", strtotime($date));
+            $month = date("M", strtotime($date));
+          ?>
+			   <div class="col-lg-4 col-md-6 col-sm-8 col-10 m-auto">
+				 <div class="blog-post">
 					<div class="post-thumb">
 						<a href="news-single">
 							<img src="{{$past->pic}}" alt="post-image" class="img-fluid">
@@ -131,7 +137,7 @@
 					</div>
 					<div class="post-content">
 						<div class="date">
-							<h4>20<span>May</span></h4>
+              <h4>{{$day}}<span>{{$month}}</span></h4>
 						</div>
 						<div class="post-title">
 							<h2><a href="news-single">{{$past->body}}.</a></h2>

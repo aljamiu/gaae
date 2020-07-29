@@ -122,14 +122,14 @@
               $joined = $user->created_at;
               $pic = $user->pic;
 
-              $date = date("d", strtotime($joined));
+              $date = date("Y", strtotime($joined));
            ?>
           @endforeach      
 						
 				<div class="block">
           <h1>Welcome</h1>
           <h2>{{ $name }}</h2>
-					<h3>You joined {{$joined}}</h3>
+					<h3>You joined {{$date}}</h3>
 					<h6>subscription: {{ $sstatus ?? 'not yet a subscriber' }}</h6>
 					<!-- Action Button -->
 					<a class="btn btn-main-md" href="{{ route('logout') }}"

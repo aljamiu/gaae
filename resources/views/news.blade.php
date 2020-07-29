@@ -121,7 +121,13 @@
 	<div class="container">
 		<div class="row mt-30">
 		@foreach($progs as $news)
-	        @if($news->category == 'news')
+      @if($news->category == 'news')
+       <?php 
+          $date = $news->ddate;
+
+          $day = date("d", strtotime($date));
+          $month = date("M", strtotime($date));
+       ?> 
 			<div class="col-lg-4 col-md-6 col-sm-8 col-10 m-auto">
 				<div class="blog-post">
 					<div class="post-thumb">
@@ -131,7 +137,7 @@
 					</div>
 					<div class="post-content">
 						<div class="date">
-							<h4>20<span>May</span></h4>
+							<h4>{{$day}}<span>{{$month}}</span></h4>
 						</div>
 						<div class="post-title">
 							<h2><a href="news-single">{{$news->body}}.</a></h2>
