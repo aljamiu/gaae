@@ -111,6 +111,22 @@ class generalController extends Controller
 
     }
 
+    public function present_exece(){
+
+        $exec = DB::table('executives')->paginate();
+
+        return view('pres-executive', ['progs'=> $exec]);
+
+    }
+
+    public function past_exec(){
+
+        $exec = DB::table('executives')->paginate();
+
+        return view('past-executive', ['progs'=> $exec]);
+
+    }
+
     public function about(){
 
         $c = DB::table('users')

@@ -157,7 +157,7 @@
 				<!-- Speaker 1 -->
 				<div class="speaker-item">
 					<div class="image">
-						<img src="{{$icons->pic}}" alt="speaker" class="img-fluid">
+						<img src="storage/{{$icons->pic}}" alt="speaker" class="img-fluid">
 						<div class="primary-overlay"></div>
 						<div class="socials">
 							<ul class="list-inline">
