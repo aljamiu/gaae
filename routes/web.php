@@ -16,7 +16,7 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', 'generalController@index');
 //
-
+Route::get('executives', 'generalController@execut');
 //
 Route::get('/about', 'generalController@about');
 //
@@ -28,9 +28,9 @@ Route::get('/login', function () {
   return view('login');
 });
 
-Route::post('register', 'registerscontroller@save');
-Route::get('/register', function () {
-  return view('register');
+Route::post('register1', 'registerscontroller@save');
+Route::get('/register1', function () {
+  return view('register1');
 });
 
 Route::get('/404', function () {

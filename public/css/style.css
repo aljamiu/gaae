@@ -8,7 +8,10 @@ body {
   font-family: "Roboto", sans-serif;
   -webkit-font-smoothing: antialiased;
 }
-
+.navbar .container-fluid .navbar-brand img{
+  width: 50px;
+  height: 50px;
+}
 h1, h2, h3, h4, h5, h6 {
   font-family: "Montserrat", sans-serif;
   color: #dbdee2;
@@ -221,10 +224,11 @@ button:hover {
 }
 
 .bg-banner-one {
-  background: url(../images/background/homepage-one-banner.jpg) no-repeat;
+  background-image: url(../images/gallery/DSC_0659.jpg);
   background-size: cover;
   background-position: center center;
 }
+
 
 .bg-banner-two {
   background: url(../images/background/banner-bg-two.jpg) no-repeat;

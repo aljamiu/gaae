@@ -6,7 +6,7 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Ghana Association of Agriculture Economists</title>
+  <title>Ashanti Ghana Association of Agriculture Economists</title>
   
   <!-- PLUGINS CSS STYLE -->
   <!-- Bootstrap -->
@@ -37,7 +37,7 @@
   <div class="container-fluid p-0">
       <!-- logo -->
       <a class="navbar-brand" href="/">
-        <img class="logo" src="images/logo.png" alt="logo">
+        <img src="images/logo.png" alt="logo">
       </a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
       <span class="fa fa-bars"></span>
@@ -46,13 +46,13 @@
       <ul class="navbar-nav mx-auto">
         <li class="nav-item dropdown active dropdown-slide">
           <a class="nav-link" href="#"  data-toggle="dropdown">Home
-            
+            <span>/</span>
           </a>
           <!-- Dropdown list -->
           <div class="dropdown-menu">
             <a class="dropdown-item" href="/">Homepage</a>
 			<a class="dropdown-item" href="homepage-two">Homepage 2</a>
-			<a class="dropdown-item" href="executives">Executive board</a>
+			<a class="dropdown-item" href="#">Executive board</a>
 			<a class="dropdown-item" href="#">Regions</a>
 			<a class="dropdown-item" href="#">Awards And Honors</a>
 			<a class="dropdown-item" href="#">committes</a>
@@ -60,7 +60,7 @@
 		</li>
 		<li class="nav-item dropdown active dropdown-slide">
           <a class="nav-link" href="#"  data-toggle="dropdown">Membership
-            
+            <span>/</span>
           </a>
           <!-- Dropdown list -->
           <div class="dropdown-menu">
@@ -73,7 +73,7 @@
 		</li>
 		<li class="nav-item dropdown dropdown-slide">
           <a class="nav-link" href="#"  data-toggle="dropdown">Events
-            
+            <span>/</span>
           </a>
           <!-- Dropdown list -->
           <div class="dropdown-menu">
@@ -83,7 +83,7 @@
 		</li>
 		<li class="nav-item dropdown dropdown-slide">
           <a class="nav-link" href="#"  data-toggle="dropdown">Publications
-            
+            <span>/</span>
           </a>
           <!-- Dropdown list -->
           <div class="dropdown-menu">
@@ -93,7 +93,7 @@
 		</li>
 		<li class="nav-item dropdown active dropdown-slide">
           <a class="nav-link" href="#"  data-toggle="dropdown">Partners
-            
+            <span>/</span>
           </a>
           <!-- Dropdown list -->
           <div class="dropdown-menu">
@@ -106,18 +106,18 @@
 		</li>
         <li class="nav-item">
           <a class="nav-link" href="login">Login
-            
+            <span>/</span>
           </a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="register">Register</a>
+          <a class="nav-link" href="register">Register<span>/</span></a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="contact">Contact</a>
 		</li>
 		<li class="nav-item dropdown active dropdown-slide">
           <a class="nav-link" href="#"  data-toggle="dropdown">Resources
-            
+            <span>/</span>
           </a>
           <!-- Dropdown list -->
           <div class="dropdown-menu">
@@ -126,10 +126,10 @@
           </div>
 		</li>
       </ul>
-      <!-- <a href="register" class="ticket">
+      <a href="register" class="ticket">
         <img src="images/icon/ticket.png" alt="ticket">
         <span>Register Now</span>
-      </a> -->
+      </a>
       </div>
   </div>
 </nav>
@@ -141,26 +141,19 @@
 =            Banner            =
 =============================-->
 
-<section class="banner bg-banner-one overlay-lighter" >
+<section class="banner bg-banner-one overlay-dark">
 	<div class="container">
 		<div class="row">
 			<div class="col-lg-12">
 				<!-- Content Block -->
-				<div align='center' class="block">
+				<div class="block">
 					<!-- Coundown Timer -->
 					<!--div class="timer"></div-->
-					<h3 style="color: white;">Ghana  Association of Agricultural  Economists</h3>
+					<h1>Ashanti Ghana  Association of Agricultural  Economists</h1><h2>(GAAE)</h2>
 					
 					<h6>found since 02-05 July 2017</h6>
-					<ul class="list-inline">
-						<li class="list-inline-item">
-							<a href="register1" class="btn btn-main-md">sign up</a>
-						</li>
-						<li class="list-inline-item">
-							<a href="login" class="btn btn-white-md">sign in</a>
-						</li>
-					</ul>
 					<!-- Action Button -->
+					<a href="#" class="btn btn-white-md">See Member Benefits</a>
 				</div>
 			</div>
 		</div>
@@ -169,15 +162,50 @@
 	
 <!--====  End of Banner  ====-->
 
+<!--===========================
+=            About            =
+============================-->
+
+<section class="section about">
+	<div class="container">
+		<div class="row">
+			
+			<div class="col-lg-10 align-self-center">
+				<div class="content-block">
+					<h2>welcome to <span class="alternate">GAAE</span></h2>
+					<div class="description-one">
+						<p>
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusm tempor incididunt ut labore dolore magna aliqua enim ad minim veniam quis nostrud exercitation ullamco.
+						</p>
+					</div>
+					<div class="description-two">
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmtempor incididunt ut labore et dolore magna aliq enim ad minim veniam quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea.</p>
+					</div>
+					<ul class="list-inline">
+						<li class="list-inline-item">
+							<a href="register" class="btn btn-main-md">sign up</a>
+						</li>
+						<li class="list-inline-item">
+							<a href="about" class="btn btn-transparent-md">about GAAE</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+<!--====  End of About  ====-->
+
 <!--============================
 =            container            =
 =============================-->
 
 
 <section style="padding: 100px 0;">
+	<div class="container">
 		<div class="row">
-	<div class="container" style="background-color: lightgreen;">
-			<div class="col-md-8 mx-auto ">
+			<div class="col-md-8 mx-auto">
 				<div class="text-center p-5 shadow rounded">
 					<h2 class="mb-3">Ghana Association of Agricultural Economists <span class="alternate"> (GAAE)</span></h2>
 					<h4 class="mb-3">agriculture is the future. so let's invest for our nation's future</h4>
@@ -197,41 +225,6 @@
 </section>
 <!--====  End of container  ====-->
 
-<!--===========================
-=            About            =
-============================-->
-
-<section class="section about" style="background-color: whitesmoke;">
-	<div class="container ">
-		<div class="row">
-			
-			<div class="col-lg-10 align-self-center">
-				<div class="content-block">
-					<h2>welcome to <span class="alternate">GAAE</span></h2>
-					<div class="description-one">
-						<p>
-							Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusm tempor incididunt ut labore dolore magna aliqua enim ad minim veniam quis nostrud exercitation ullamco.
-						</p>
-					</div>
-					<div class="description-two">
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmtempor incididunt ut labore et dolore magna aliq enim ad minim veniam quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea.</p>
-					</div>
-					<ul class="list-inline">
-						<li class="list-inline-item">
-							<a href="register1" class="btn btn-main-md">sign up</a>
-						</li>
-						<li class="list-inline-item">
-							<a href="about" class="btn btn-transparent-md">about GAAE</a>
-						</li>
-					</ul>
-				</div>
-			</div>
-		</div>
-	</div>
-</section>
-
-<!--====  End of About  ====-->
-
 <!--==============================
 =            past programs            =
 ===============================-->
@@ -248,14 +241,14 @@
 			</div>
 		</div>
 		<div class="row">
-		   @foreach($program as $prog)
+		   @foreach($project as $proj)
 			<div class="col-lg-3 col-md-4 col-sm-6">
 				<!-- past prog 1 -->
 				
 				<div class="speaker-item">
 					<div class="image">
 					
-						<img src="{{$prog->pic}}" alt="speaker" class="img-fluid">
+						<img src="{{$proj->pic}}" alt="speaker" class="img-fluid">
 						<div class="primary-overlay"></div>
 						<div class="socials">
 							<ul class="list-inline">
@@ -267,8 +260,8 @@
 						</div>
 					</div>
 					<div class="content text-center">
-						<h5><a href="single-speaker">{{$prog->title}}</a></h5>
-						<p>{{$prog->ddate}}</p>
+						<h5><a href="single-speaker">{{$proj->title}}</a></h5>
+						<p>{{$proj->ddate}}</p>
 					</div>
 				</div>
 				
@@ -279,6 +272,40 @@
 </section>
 
 <!--====  End of past prog  ====-->
+
+<!--==============================================
+=            Call to Action Subscribe            =
+===============================================-->
+
+<section class="cta-subscribe bg-subscribe overlay-dark">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-6 mr-auto">
+				<!-- Subscribe Content -->
+				<div class="content">
+					<h3>Subscribe to Our <span class="alternate">Newsletter</span></h3>
+					<p>Lorem ipsum dolor sit amet consectetur adipisicing elit sed do eiusm tempor</p>
+				</div>
+			</div>
+			<div class="col-md-6 ml-auto align-self-center">
+				<!-- Subscription form -->
+				<form action="news" method="POST" class="row">
+				@csrf
+					<div class="col-lg-8 col-md-12">
+						<input type="email" name="email" class="form-control main white mb-lg-0" placeholder="Email">
+					</div>
+					<div class="col-lg-4 col-md-12">
+						<div class="subscribe-button">
+							<button class="btn btn-main-md">Subscribe</button>
+						</div>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+</section>
+
+<!--====  End of Call to Action Subscribe  ====-->
 
 <!--==============================
 = projects  Schedule  achievements    =
@@ -469,45 +496,11 @@
 
 <!--====  End of Schedule  ====-->
 
-<!--==============================================
-=            Call to Action Subscribe            =
-===============================================-->
-
-<section class="cta-subscribe bg-subscribe overlay-dark">
-	<div class="container">
-		<div class="row">
-			<div class="col-md-6 mr-auto">
-				<!-- Subscribe Content -->
-				<div class="content">
-					<h3>Subscribe to Our <span class="alternate">Newsletter</span></h3>
-					<p>Lorem ipsum dolor sit amet consectetur adipisicing elit sed do eiusm tempor</p>
-				</div>
-			</div>
-			<div class="col-md-6 ml-auto align-self-center">
-				<!-- Subscription form -->
-				<form action="news" method="POST" class="row">
-				@csrf
-					<div class="col-lg-8 col-md-12">
-						<input type="email" name="email" class="form-control main white mb-lg-0" placeholder="Email">
-					</div>
-					<div class="col-lg-4 col-md-12">
-						<div class="subscribe-button">
-							<button class="btn btn-main-md">Subscribe</button>
-						</div>
-					</div>
-				</form>
-			</div>
-		</div>
-	</div>
-</section>
-
-<!--====  End of Call to Action Subscribe  ====-->
-
 <!--==================================
 =            Registration            =
 ===================================-->
 
-<!-- <section class="registration">
+<section class="registration">
 	<div class="container-fuild p-0">
 		<div class="row">
 			
@@ -588,9 +581,197 @@
 			</div>
 		</div>
 	</div>
-</section> -->
+</section>
 
 <!--====  End of Registration  ====-->
+
+<!--====  executives  ====-->
+
+<section class="section schedule">
+	<div class="container">
+		<div class="row">
+			<div class="col-12">
+				<div class="section-title">
+					<h3>GAAE 2020 Hot <span class="alternate">Projects</span></h3>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit sed do eiusm tempor incididunt ut labore</p>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-12">
+				<div class="schedule-tab">
+					<ul class="nav nav-pills text-center">
+					  <li class="nav-item">
+					    <a class="nav-link active" href="#nov20" data-toggle="pill">
+							PRESIDENTS
+							<?php $i=0 ?>
+							   @foreach($project as $index => $proj)
+							   @if($proj->category == 'technology')
+								 <?php $i++ ?>
+								@endif
+							   @endforeach
+							   
+							   @if($i == '1')
+							   <span>{{$i}} machinery</span>
+							   @else
+							   <span>{{$i}} machineries</span>
+							   @endif
+							
+					    </a>
+					  </li>
+					  <li class="nav-item">
+					    <a class="nav-link" href="#nov21" data-toggle="pill">
+							VICE PRESIDENTS
+							<?php $i=0 ?>
+							   @foreach($project as $index => $proj)
+							   @if($proj->category == 'human')
+								 <?php $i++ ?>
+								@endif
+							   @endforeach
+							   
+							   @if($i == '1')
+							   <span>{{$i}} beneficiary</span>
+							   @else
+							   <span>{{$i}} beneficiaries</span>
+							   @endif
+							 
+					    </a>
+					  </li>
+					  <li class="nav-item">
+					    <a class="nav-link" href="#nov22" data-toggle="pill">
+							SECRETARIES/TREASURERS
+							<?php $i=0 ?>
+							   @foreach($project as $index => $proj)
+							   @if($proj->category == 'production')
+								 <?php $i++ ?>
+								@endif
+							   @endforeach
+							   
+							   @if($i == '1')
+							   <span>{{$i}} factory</span>
+							   @else
+							   <span>{{$i}} factories</span>
+							   @endif
+						
+					    </a>
+					  </li>
+					</ul>
+				</div>
+				<div class="schedule-contents bg-schedule">
+					<div class="tab-content" id="pills-tabContent">
+					  <div class="tab-pane fade show active schedule-item" id="nov20">
+					  	<!-- Headings -->
+					  	<ul class="m-0 p-0">
+					  		<li class="headings">
+					  			<div class="time">Year</div>
+					  			<div class="speaker">Biography</div>
+					  			<div class="subject">Name</div>
+					  			<div class="venue">activities</div>
+					  		</li>
+							  <!-- Schedule Details -->
+							@foreach($project as $proj)
+							   @if($proj->category == 'technology')
+					  		<li class="schedule-details">
+					  			<div class="block">
+					  				<!-- time -->
+							  		<div class="time">
+							  			<i class="fa fa-clock-o"></i>
+							  			<span class="time">{{$proj->region}}</span>
+							  		</div>
+							  		<!-- Speaker -->
+							  		<div class="speaker">
+							  			<img src="images/speakers/speaker-thumb-one.jpg" alt="speaker-thumb-one">
+										<span class="name">{{$proj->title}}</span>
+							  		</div>
+							  		<!-- Subject -->
+							  		<div class="subject">{{$proj->pstatus}}</div>
+							  		<!-- Venue -->
+							  		<div class="venue">{{$proj->place}}</div>
+					  			</div>
+							  </li>
+							  @endif
+						    @endforeach
+					  		
+					  	</ul>
+					  </div>
+					  <div class="tab-pane fade schedule-item" id="nov21">
+					  	<!-- Headings -->
+					  	<ul class="m-0 p-0">
+					  		<li class="headings">
+							  <div class="time">Year</div>
+					  			<div class="speaker">Biography</div>
+					  			<div class="subject">Name</div>
+					  			<div class="venue">activities</div>
+					  		</li>
+					  		<!-- Schedule Details -->
+							@foreach($project as $proj)
+							  @if($proj->category == 'human')
+					  		<li class="schedule-details">
+					  			<div class="block">
+					  				<!-- time -->
+							  		<div class="time">
+							  			<i class="fa fa-clock-o"></i>
+							  			<span class="time">{{$proj->region}}</span>
+							  		</div>
+							  		<!-- Speaker -->
+							  		<div class="speaker">
+							  			<img src="images/speakers/speaker-thumb-one.jpg" alt="speaker-thumb-one">
+										<span class="name">{{$proj->title}}</span>
+							  		</div>
+							  		<!-- Subject -->
+							  		<div class="subject">{{$proj->pstatus}}</div>
+							  		<!-- Venue -->
+							  		<div class="venue">{{$proj->place}}</div>
+					  			</div>
+							  </li>
+							  @endif
+						    @endforeach
+					  	</ul>
+					  </div>
+					  <div class="tab-pane fade schedule-item" id="nov22">
+					  	<!-- Headings -->
+					  	<ul class="m-0 p-0">
+					  		<li class="headings">
+							  <div class="time">Year</div>
+					  			<div class="speaker">Biography</div>
+					  			<div class="subject">Name</div>
+					  			<div class="venue">activities</div>
+					  		</li>
+					  		<!-- Schedule Details -->
+							@foreach($project as $proj)
+							    @if($proj->category == 'production') 
+					  		<li class="schedule-details">
+					  			<div class="block">
+					  				<!-- time -->
+							  		<div class="time">
+							  			<i class="fa fa-clock-o"></i>
+							  			<span class="time">{{$proj->region}}</span>
+							  		</div>
+							  		<!-- Speaker -->
+							  		<div class="speaker">
+							  			<img src="images/speakers/speaker-thumb-one.jpg" alt="speaker-thumb-one">
+										<span class="name">{{$proj->title}}</span>
+							  		</div>
+							  		<!-- Subject -->
+							  		<div class="subject">{{$proj->pstatus}}</div>
+							  		<!-- Venue -->
+							  		<div class="venue">{{$proj->place}}</div>
+					  			</div>
+							  </li>
+							  @endif
+						    @endforeach
+					  	</ul>
+					  </div>
+					</div>
+				</div>
+				
+			</div>
+		</div>
+	</div>
+</section>
+<!--================================
+=            end of executives           =
+=================================-->
 
 <!--================================
 =            Google Map            =

@@ -111,10 +111,10 @@
 							<h3>Signup to <span class="alternate">GAAE</span></h3>
 							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
 						</div>
-						<form action="register"  method="POST" class="row" enctype="multipart/form-data">
+						<form action="register1"  method="POST" class="row" enctype="multipart/form-data">
             @csrf
 							<div class="col-md-6">
-								<input type="text" name="name" class="form-control main" placeholder="Your Name">
+								<input type="text" name="name" class="form-control main" placeholder="Your full Name">
 							</div>
 							<div class="col-md-6">
 								<input type="email" name="email" class="form-control main" placeholder="Email">
@@ -125,17 +125,8 @@
               <div class="col-md-6">
                 <input type="text" name="region" class="form-control main" placeholder="Region">
               </div>
-              <div class="col-md-6">
-                <input type="text" name="username" class="form-control main" placeholder="Username">
-              </div>
-							<div class="col-md-6">
-								<input type="password" name="password" class="form-control main" placeholder="password">
-							</div>
-              <div class="col-md-6">
-								<input type="file" name="pic" class="form-control main" placeholder="Your picture">
-							</div>
 							<div class="col-12">
-								<button type="submit" class="btn btn-white-md">Register Now</button>
+								<button type="submit" class="btn btn-white-md col-12 form-control main">Register Now</button>
 							</div>
 						</form>
 					</div>

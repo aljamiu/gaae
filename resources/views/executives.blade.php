@@ -1,5 +1,3 @@
-
-                    
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -29,6 +27,8 @@
 </head>
 
 <body class="body-wrapper">
+
+
 <!--========================================
 =            Navigation Section            =
 =========================================-->
@@ -37,7 +37,7 @@
   <div class="container-fluid p-0">
       <!-- logo -->
       <a class="navbar-brand" href="/">
-        <!-- <img src="images/logo.png" alt="logo"> -->
+        <img src="images/logo.png" alt="logo">
       </a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
       <span class="fa fa-bars"></span>
@@ -66,10 +66,10 @@
           <a class="nav-link" href="contact">Contact</a>
         </li>
       </ul>
-      <a href="register" class="ticket">
+      <!--a href="register" class="ticket">
         <img src="images/icon/ticket.png" alt="ticket">
         <span>Register Now</span>
-      </a>
+      </a-->
       </div>
   </div>
 </nav>
@@ -81,126 +81,180 @@
 =            Banner            =
 =============================-->
 
+<section class="page-title bg-title overlay-dark">
+	<div class="container">
+		<div class="row">
+			<div class="col-12 text-center">
+				<div class="title">
+					<h3>welcome back</h3>
+				</div>
+				<ol class="breadcrumb p-0 m-0">
+				  <li class="breadcrumb-item"><a href="/">Home</a></li>
+				  <li class="breadcrumb-item active">Login</li>
+				</ol>
+			</div>
+		</div>
+	</div>
+</section>
+
 <!--====  End of Schedule  ====-->
 
 <!--==================================
 =            Registration            =
 ===================================-->
 
-<section class="registration">
-	<div class="container-fuild p-0">
+<!--====  executives  ====-->
+
+<section class="section schedule">
+	<div class="container">
 		<div class="row">
-			<div class="col-lg-12 col-md-12 p-0">
-				<div class="registration-block bg-registration overlay-dark">
-					<div class="block">
-						<div class="title text-left">
-							<h3>Signup to <span class="alternate">GAAE</span></h3>
-							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
-            </div>        
-
-						<form method="POST" action="{{ route('register') }}" class="row">
-              @csrf
-							<div class="col-md-6">
-                <input id="name" type="text" class="form-control main @error('name') is-invalid @enderror" name="name" value="{{ old('name') }}" required autocomplete="name" autofocus placeholder="Your Name">
-
-                @error('name')
-                <span class="invalid-feedback" role="alert">
-                  <strong>{{ $message }}</strong>
-                </span>
-                @enderror
-							</div>
-							<div class="col-md-6">
-                <input id="email" type="email" class="form-control main @error('email') is-invalid @enderror" name="email" value="{{ old('email') }}" required autocomplete="email" placeholder="Email">
-
-                  @error('email')
-                    <span class="invalid-feedback" role="alert">
-                      <strong>{{ $message }}</strong>
-                    </span>
-                  @enderror
-							</div>
-							<div class="col-md-6">
-                <input id="contact" type="text" class="form-control main @error('contact') is-invalid @enderror" name="contact" value="{{ old('contact') }}" required autocomplete="contact" placeholder="phone">
-
-                  @error('contact')
-                  <span class="invalid-feedback" role="alert">
-                    <strong>{{ $message }}</strong>
-                  </span>
-                  @enderror
-							</div>
-              <div class="col-md-6">
-                <input id="region" type="text" class="form-control main @error('region') is-invalid @enderror" name="region" value="{{ old('region') }}" required autocomplete="region" placeholder="region">
-
-                @error('region')
-                <span class="invalid-feedback" role="alert">
-                  <strong>{{ $message }}</strong>
-                </span>
-                @enderror
-              </div>
-              <div class="col-md-6">
-                <input id="username" type="text" class="form-control main @error('username') is-invalid @enderror" name="username" value="{{ old('username') }}" required autocomplete="username" placeholder="username">
-
-                @error('username')
-                <span class="invalid-feedback" role="alert">
-                  <strong>{{ $message }}</strong>
-                </span>
-                 @enderror
-              </div>
-							<div class="col-md-6">
-                <input id="password" type="password" class="form-control main @error('password') is-invalid @enderror" name="password" required autocomplete="new-password" placeholder="password">
-
-                @error('password')
-                <span class="invalid-feedback" role="alert">
-                  <strong>{{ $message }}</strong>
-                </span>
-                @enderror
-              </div>
-              <div class="col-md-12">
-                <input id="password-confirm" type="password" class="form-control main" name="password_confirmation" required autocomplete="new-password" placeholder="confirm password">
-              </div>
-							<div class="col-12">
-                <button type="submit" class="btn btn-white-md form-control main">
-                  {{ __('Register') }}
-                </button>
-							</div>
-						</form>
+			<div class="col-12">
+				<div class="section-title">
+					
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-12">
+				<div class="schedule-tab">
+					<ul class="nav nav-pills text-center">
+					  <li class="nav-item">
+					    <a class="nav-link active" href="#nov20" data-toggle="pill">
+							PRESIDENTS
+							
+					    </a>
+					  </li>
+					  <li class="nav-item">
+					    <a class="nav-link" href="#nov21" data-toggle="pill">
+							VICE PRESIDENTS
+							
+					    </a>
+					  </li>
+					  <li class="nav-item">
+					    <a class="nav-link" href="#nov22" data-toggle="pill">
+							SECRETARIES/TREASURERS
+							
+					    </a>
+					  </li>
+					</ul>
+				</div>
+				<div class="schedule-contents bg-schedule">
+					<div class="tab-content" id="pills-tabContent">
+					  <div class="tab-pane fade show active schedule-item" id="nov20">
+					  	<!-- Headings -->
+					  	<ul class="m-0 p-0">
+					  		<li class="headings">
+					  			<div class="time">Year</div>
+					  			<div class="speaker">Picture</div>
+					  			<div class="subject">Name</div>
+					  			<div class="venue">activities</div>
+					  		</li>
+							  <!-- Schedule Details -->
+							@foreach($executive as $exc)
+							   @if($exc->position == 'president')
+					  		<li class="schedule-details">
+					  			<div class="block">
+					  				<!-- time -->
+							  		<div class="time">
+							  			<i class="fa fa-clock-o"></i>
+							  			<span class="time">{{$exc->period}}</span>
+							  		</div>
+							  		<!-- Speaker -->
+							  		<div class="speaker">
+							  			<img style="max-width: 80px; max-height:80px; border-radius:100px;" src="storage/{{$exc->pic}}" alt="speaker-thumb-one">
+										<!-- <span class="name">{{$exc->email}}</span> -->
+							  		</div>
+							  		<!-- Subject -->
+							  		<div class="subject">{{$exc->name}}</div>
+							  		<!-- Venue -->
+							  		<div class="venue">{{$exc->dstatus}}</div>
+					  			</div>
+							  </li>
+							  @endif
+						    @endforeach
+					  		
+					  	</ul>
+					  </div>
+					  <div class="tab-pane fade schedule-item" id="nov21">
+					  	<!-- Headings -->
+					  	<ul class="m-0 p-0">
+					  		<li class="headings">
+							  <div class="time">Year</div>
+					  			<div class="speaker">Picture</div>
+					  			<div class="subject">Name</div>
+					  			<div class="venue">activities</div>
+					  		</li>
+					  		<!-- Schedule Details -->
+							@foreach($executive as $exc)
+							   @if($exc->position == 'vice')
+					  		<li class="schedule-details">
+							  <div class="block">
+					  				<!-- time -->
+							  		<div class="time">
+							  			<i class="fa fa-clock-o"></i>
+							  			<span class="time">{{$exc->period}}</span>
+							  		</div>
+							  		<!-- Speaker -->
+							  		<div class="speaker">
+							  			<img style="max-width: 80px; max-height:80px; border-radius:50px;" src="storage/{{$exc->pic}}" alt="speaker-thumb-one">
+										<span class="name">{{$exc->email}}</span>
+							  		</div>
+							  		<!-- Subject -->
+							  		<div class="subject">{{$exc->name}}</div>
+							  		<!-- Venue -->
+							  		<div class="venue">{{$exc->dstatus}}</div>
+					  			</div>
+							  </li>
+							  @endif
+						    @endforeach
+					  	</ul>
+					  </div>
+					  <div class="tab-pane fade schedule-item" id="nov22">
+					  	<!-- Headings -->
+					  	<ul class="m-0 p-0">
+					  		<li class="headings">
+							  <div class="time">Year</div>
+					  			<div class="speaker">Picture</div>
+					  			<div class="subject">Name</div>
+					  			<div class="venue">activities</div>
+					  		</li>
+					  		<!-- Schedule Details -->
+							@foreach($executive as $exc)
+							   @if($exc->position == 'sec' or 'treas')
+					  		<li class="schedule-details">
+							  <div class="block">
+					  				<!-- time -->
+							  		<div class="time">
+							  			<i class="fa fa-clock-o"></i>
+							  			<span class="time">{{$exc->period}}</span>
+							  		</div>
+							  		<!-- Speaker -->
+							  		<div class="speaker">
+							  			<img style="max-width: 80px; max-height:80px; border-radius:50px;" src="storage/{{$exc->pic}}" alt="speaker-thumb-one">
+										<span class="name">{{$exc->email}}</span>
+							  		</div>
+							  		<!-- Subject -->
+							  		<div class="subject">{{$exc->name}}</div>
+							  		<!-- Venue -->
+							  		<div class="venue">{{$exc->dstatus}}</div>
+					  			</div>
+							  </li>
+							  @endif
+						    @endforeach
+					  	</ul>
+					  </div>
 					</div>
 				</div>
+				
 			</div>
 		</div>
 	</div>
 </section>
-
-<!--====  End of Registration  ====-->
-
-
-<!--===================================
-=            Pricing Table            =
-====================================-->
-
-
-
-<!--====  End of Pricing Table  ====-->
-
-
-<!--===========================================
-=            Call to Action Ticket            =
-============================================-->
-
-
-
-<!--====  End of Call to Action Ticket  ====-->
-
-<!--==============================
-=            Sponsors            =
-===============================-->
-
-<!--====  End of Sponsors  ====-->
-
 <!--================================
-=            News Posts            =
+=            end of executives           =
 =================================-->
 
-<!--====  End of News Posts  ====-->
+<!--====  End of Call to Action Ticket  ====-->
 
 <!--================================
 =            Google Map            =

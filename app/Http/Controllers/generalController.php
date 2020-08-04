@@ -19,7 +19,27 @@ class generalController extends Controller
         ->where('category', 'human')
         ->get();
 
-        return view('index', ['project'=> $p, 'hp'=> $hp]);
+        $prog = DB::table('programs')
+        ->where('category', 'pastprogram')
+        ->get();
+
+        return view('index', ['project'=> $p, 'hp'=> $hp, 'program' => $prog]);
+
+    }
+
+    public function region(){
+
+        $p = DB::table('projects')->get();
+
+        $hp = DB::table('projects')
+        ->where('category', 'human')
+        ->get();
+
+        $rg = DB::table('regions')
+        ->where('regionid', '1')
+        ->get();
+
+        return view('index', ['project'=> $p, 'hp'=> $hp, 'rigion'=> $rg]);
 
     }
 
@@ -40,6 +60,16 @@ class generalController extends Controller
         ->get();
 
         return view('home', ['user'=> $u, 'sub'=> $s]);
+
+    }
+
+    public function execut(){
+
+        $e = DB::table('users')
+        ->join('executives', 'users.id', 'executives.userid')
+        ->get();
+
+        return view('executives', ['executive'=> $e]);
 
     }
 
