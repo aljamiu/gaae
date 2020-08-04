@@ -119,7 +119,7 @@ class generalController extends Controller
 
     public function news(){
 
-        $prog = DB::table('programs')->paginate();
+        $prog = DB::table('programs')->paginate(12);
 
         return view('news', ['progs'=> $prog]);
 
@@ -127,7 +127,7 @@ class generalController extends Controller
 
     public function pastevents(){
 
-        $prog = DB::table('programs')->paginate();
+        $prog = DB::table('programs')->paginate(20);
 
         return view('past-events', ['progs'=> $prog]);
 
@@ -135,7 +135,7 @@ class generalController extends Controller
 
     public function upcomingevents(){
 
-        $prog = DB::table('programs')->paginate();
+        $prog = DB::table('programs')->paginate(12);
 
         return view('upcoming-events', ['progs'=> $prog]);
 
@@ -143,7 +143,7 @@ class generalController extends Controller
 
     public function present_exece(){
 
-        $exec = DB::table('executives')->paginate();
+        $exec = DB::table('executives')->paginate(12);
 
         return view('pres-executive', ['progs'=> $exec]);
 
@@ -151,7 +151,7 @@ class generalController extends Controller
 
     public function past_exec(){
 
-        $exec = DB::table('executives')->paginate();
+        $exec = DB::table('executives')->paginate(12);
 
         return view('past-executive', ['progs'=> $exec]);
 

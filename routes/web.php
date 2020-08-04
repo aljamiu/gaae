@@ -56,12 +56,10 @@ Route::get('/news', 'generalController@news')
 ->middleware('auth');
 
 //
-Route::get('/past-events', 'generalController@pastevents')
-->middleware('auth');
+Route::get('/past-events', 'generalController@pastevents');
 //
 
-Route::get('/upcoming-events', 'generalController@upcomingevents')
-->middleware('auth');
+Route::get('/upcoming-events', 'generalController@upcomingevents');
 //
 
 Route::get('/pricing', function () {

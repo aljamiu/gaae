@@ -119,7 +119,7 @@
 
 <section class="news section">
 	<div class="container">
-		<div class="row mt-30">
+		<div class="row mt-3">
 		@foreach($progs as $past)
           @if($past->category == 'pastprogram')
           <?php 
@@ -128,7 +128,7 @@
             $day = date("d", strtotime($date));
             $month = date("M", strtotime($date));
           ?>
-			   <div class="col-lg-4 col-md-6 col-sm-8 col-10 m-auto">
+			   <div class="col-md-3">
 				 <div class="blog-post">
 					<div class="post-thumb">
 						<a href="news-single">

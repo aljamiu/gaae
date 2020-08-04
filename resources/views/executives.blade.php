@@ -90,7 +90,7 @@
 				</div>
 				<ol class="breadcrumb p-0 m-0">
 				  <li class="breadcrumb-item"><a href="/">Home</a></li>
-				  <li class="breadcrumb-item active">Login</li>
+				  <li class="breadcrumb-item active">Executives</li>
 				</ol>
 			</div>
 		</div>
@@ -119,23 +119,48 @@
 				<div class="schedule-tab">
 					<ul class="nav nav-pills text-center">
 					  <li class="nav-item">
-					    <a class="nav-link active" href="#nov20" data-toggle="pill">
+					    <a style="font-size: 15px;" class="nav-link active" href="#nov20" data-toggle="pill">
 							PRESIDENTS
 							
 					    </a>
 					  </li>
 					  <li class="nav-item">
-					    <a class="nav-link" href="#nov21" data-toggle="pill">
+					  <a style="font-size: 15px;" class="nav-link" href="#nov21" data-toggle="pill">
 							VICE PRESIDENTS
 							
 					    </a>
 					  </li>
 					  <li class="nav-item">
-					    <a class="nav-link" href="#nov22" data-toggle="pill">
-							SECRETARIES/TREASURERS
+					  <a style="font-size: 15px;" class="nav-link" href="#nov22" data-toggle="pill">
+							SECRETARIES
 							
 					    </a>
 					  </li>
+					  <li class="nav-item">
+					  <a style="font-size: 15px;" class="nav-link" href="#nov23" data-toggle="pill">
+							TREASURERS
+							
+					    </a>
+					  </li>
+					  <li class="nav-item">
+					  <a style="font-size: 15px;" class="nav-link" href="#nov24" data-toggle="pill">
+							VICE SECRETARIES
+							
+					    </a>
+					  </li>
+					  <li class="nav-item">
+					  <a style="font-size: 15px;" class="nav-link" href="#nov25" data-toggle="pill">
+							BUSSINESS MANAGER
+							
+					    </a>
+					  </li>
+					  <li class="nav-item">
+					  <a style="font-size: 15px;" class="nav-link" href="#nov26" data-toggle="pill">
+							EDITOR-IN-CHIEF
+							
+					    </a>
+					  </li>
+				
 					</ul>
 				</div>
 				<div class="schedule-contents bg-schedule">
@@ -147,7 +172,7 @@
 					  			<div class="time">Year</div>
 					  			<div class="speaker">Picture</div>
 					  			<div class="subject">Name</div>
-					  			<div class="venue">activities</div>
+					  			<div class="venue">Portfolio</div>
 					  		</li>
 							  <!-- Schedule Details -->
 							@foreach($executive as $exc)
@@ -165,7 +190,7 @@
 										<!-- <span class="name">{{$exc->email}}</span> -->
 							  		</div>
 							  		<!-- Subject -->
-							  		<div class="subject">{{$exc->name}}</div>
+							  		<div class="subject"><a href="#" class="">{{$exc->name}}</a></div>
 							  		<!-- Venue -->
 							  		<div class="venue">{{$exc->dstatus}}</div>
 					  			</div>
@@ -182,11 +207,11 @@
 							  <div class="time">Year</div>
 					  			<div class="speaker">Picture</div>
 					  			<div class="subject">Name</div>
-					  			<div class="venue">activities</div>
+					  			<div class="venue">Portfolio</div>
 					  		</li>
 					  		<!-- Schedule Details -->
 							@foreach($executive as $exc)
-							   @if($exc->position == 'vice')
+							   @if($exc->position == 'vicep')
 					  		<li class="schedule-details">
 							  <div class="block">
 					  				<!-- time -->
@@ -196,11 +221,11 @@
 							  		</div>
 							  		<!-- Speaker -->
 							  		<div class="speaker">
-							  			<img style="max-width: 80px; max-height:80px; border-radius:50px;" src="storage/{{$exc->pic}}" alt="speaker-thumb-one">
-										<span class="name">{{$exc->email}}</span>
+							  			<img style="max-width: 80px; max-height:80px; border-radius:100px;" src="storage/{{$exc->pic}}" alt="speaker-thumb-one">
+										<!-- <span class="name">{{$exc->email}}</span> -->
 							  		</div>
 							  		<!-- Subject -->
-							  		<div class="subject">{{$exc->name}}</div>
+							  		<div class="subject"><a href="#" class="">{{$exc->name}}</a></div>
 							  		<!-- Venue -->
 							  		<div class="venue">{{$exc->dstatus}}</div>
 					  			</div>
@@ -216,11 +241,11 @@
 							  <div class="time">Year</div>
 					  			<div class="speaker">Picture</div>
 					  			<div class="subject">Name</div>
-					  			<div class="venue">activities</div>
+					  			<div class="venue">Portfolio</div>
 					  		</li>
 					  		<!-- Schedule Details -->
 							@foreach($executive as $exc)
-							   @if($exc->position == 'sec' or 'treas')
+							   @if($exc->position == 'sec')
 					  		<li class="schedule-details">
 							  <div class="block">
 					  				<!-- time -->
@@ -228,13 +253,12 @@
 							  			<i class="fa fa-clock-o"></i>
 							  			<span class="time">{{$exc->period}}</span>
 							  		</div>
-							  		<!-- Speaker -->
 							  		<div class="speaker">
-							  			<img style="max-width: 80px; max-height:80px; border-radius:50px;" src="storage/{{$exc->pic}}" alt="speaker-thumb-one">
-										<span class="name">{{$exc->email}}</span>
+							  			<img style="max-width: 80px; max-height:80px; border-radius:100px;" src="storage/{{$exc->pic}}" alt="speaker-thumb-one">
+										<!-- <span class="name">{{$exc->email}}</span> -->
 							  		</div>
 							  		<!-- Subject -->
-							  		<div class="subject">{{$exc->name}}</div>
+							  		<div class="subject"><a href="#" class="">{{$exc->name}}</a></div>
 							  		<!-- Venue -->
 							  		<div class="venue">{{$exc->dstatus}}</div>
 					  			</div>
@@ -243,6 +267,146 @@
 						    @endforeach
 					  	</ul>
 					  </div>
+					  <div class="tab-pane fade show active schedule-item" id="nov23">
+					  	
+					  	<ul class="m-0 p-0">
+					  		<li class="headings">
+					  			<div class="time">Year</div>
+					  			<div class="speaker">Picture</div>
+					  			<div class="subject">Name</div>
+					  			<div class="venue">Portfolio</div>
+					  		</li>
+							  
+							@foreach($executive as $exc)
+							   @if($exc->position == 'treas')
+					  		<li class="schedule-details">
+					  			<div class="block">
+					  				
+							  		<div class="time">
+							  			<i class="fa fa-clock-o"></i>
+							  			<span class="time">{{$exc->period}}</span>
+							  		</div>
+							  		
+							  		<div class="speaker">
+							  			<img style="max-width: 80px; max-height:80px; border-radius:100px;" src="storage/{{$exc->pic}}" alt="speaker-thumb-one">
+										
+							  		</div>
+							  		
+							  		<div class="subject"><a href="#" class="">{{$exc->name}}</a></div>
+							  		
+							  		<div class="venue">{{$exc->dstatus}}</div>
+					  			</div>
+							  </li>
+							  @endif
+						    @endforeach
+					  		
+					  	</ul>
+					  </div>
+					  <!--<div class="tab-pane fade show active schedule-item" id="nov24">
+					  	
+					  	<ul class="m-0 p-0">
+					  		<li class="headings">
+					  			<div class="time">Year</div>
+					  			<div class="speaker">Picture</div>
+					  			<div class="subject">Name</div>
+					  			<div class="venue">Portfolio</div>
+					  		</li>
+							  
+							@foreach($executive as $exc)
+							   @if($exc->position == 'vices')
+					  		<li class="schedule-details">
+					  			<div class="block">
+					  				
+							  		<div class="time">
+							  			<i class="fa fa-clock-o"></i>
+							  			<span class="time">{{$exc->period}}</span>
+							  		</div>
+							  		
+							  		<div class="speaker">
+							  			<img style="max-width: 80px; max-height:80px; border-radius:100px;" src="storage/{{$exc->pic}}" alt="speaker-thumb-one">
+										
+							  		</div>
+							  		
+							  		<div class="subject"><a href="#" class="">{{$exc->name}}</a></div>
+							  		
+							  		<div class="venue">{{$exc->dstatus}}</div>
+					  			</div>
+							  </li>
+							  @endif
+						    @endforeach
+					  		
+					  	</ul>
+					  </div>
+					  <div class="tab-pane fade show active schedule-item" id="nov25">
+					  	
+					  	<ul class="m-0 p-0">
+					  		<li class="headings">
+					  			<div class="time">Year</div>
+					  			<div class="speaker">Picture</div>
+					  			<div class="subject">Name</div>
+					  			<div class="venue">Portfolio</div>
+					  		</li>
+							  
+							@foreach($executive as $exc)
+							   @if($exc->position == 'manager')
+					  		<li class="schedule-details">
+					  			<div class="block">
+					  				
+							  		<div class="time">
+							  			<i class="fa fa-clock-o"></i>
+							  			<span class="time">{{$exc->period}}</span>
+							  		</div>
+							  	    
+							  		<div class="speaker">
+							  			<img style="max-width: 80px; max-height:80px; border-radius:100px;" src="storage/{{$exc->pic}}" alt="speaker-thumb-one">
+										
+							  		</div>
+							  		
+							  		<div class="subject"><a href="#" class="">{{$exc->name}}</a></div>
+							  		
+							  		<div class="venue">{{$exc->dstatus}}</div>
+					  			</div>
+							  </li>
+							  @endif
+						    @endforeach
+					  		
+					  	</ul>
+					  </div>
+					  <div class="tab-pane fade show active schedule-item" id="nov26">
+					  	
+					  	<ul class="m-0 p-0">
+					  		<li class="headings">
+					  			<div class="time">Year</div>
+					  			<div class="speaker">Picture</div>
+					  			<div class="subject">Name</div>
+					  			<div class="venue">Portfolio</div>
+					  		</li>
+							  
+							@foreach($executive as $exc)
+							   @if($exc->position == 'editor')
+					  		<li class="schedule-details">
+					  			<div class="block">
+					  				
+							  		<div class="time">
+							  			<i class="fa fa-clock-o"></i>
+							  			<span class="time">{{$exc->period}}</span>
+							  		</div>
+							  		
+							  		<div class="speaker">
+							  			<img style="max-width: 80px; max-height:80px; border-radius:100px;" src="storage/{{$exc->pic}}" alt="speaker-thumb-one">
+										
+							  		</div>
+							  		
+							  		<div class="subject"><a href="#" class="">{{$exc->name}}</a></div>
+							  		
+							  		<div class="venue">{{$exc->dstatus}}</div>
+					  			</div>
+							  </li>
+							  @endif
+						    @endforeach
+					  		
+					  	</ul>
+					  </div> -->
 					</div>
 				</div>
 				

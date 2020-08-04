@@ -125,6 +125,21 @@
 			<a class="dropdown-item" href="#">Newsletter</a>
           </div>
 		</li>
+		<li class="nav-item">
+          <a class="nav-link" href="news">news
+            <span>/</span>
+          </a>
+        </li>
+        <li class="nav-item dropdown dropdown-slide">
+          <a class="nav-link" href="#"  data-toggle="dropdown">Events
+            <span>/</span>
+          </a>
+          <!-- Dropdown list -->
+          <div class="dropdown-menu">
+            <a class="dropdown-item" href="upcoming-events">Upcoming Events</a>
+            <a class="dropdown-item" href="past-events">Past Events</a>
+          </div>
+        </li>
       </ul>
       <!-- <a href="register" class="ticket">
         <img src="images/icon/ticket.png" alt="ticket">
@@ -154,10 +169,10 @@
 					<h6>found since 02-05 July 2017</h6>
 					<ul class="list-inline">
 						<li class="list-inline-item">
-							<a href="register1" class="btn btn-main-md">sign up</a>
+							<a href="register1" class="btn btn-main-md">Register</a>
 						</li>
 						<li class="list-inline-item">
-							<a href="login" class="btn btn-white-md">sign in</a>
+							<a href="login" class="btn btn-white-md">Login</a>
 						</li>
 					</ul>
 					<!-- Action Button -->
